@@ -3,6 +3,7 @@
 import { createWorker } from "tesseract.js";
 import { pdfToImg } from "@/lib/pdf-to-img";
 import { useState } from "react";
+import Link from "next/link";
 
 export default function Home() {
   const [pdfContent, setPdfContent] = useState<string[]>([]);
@@ -54,7 +55,19 @@ export default function Home() {
 
   return (
     <main className="flex min-h-screen flex-col items-center sm:p-24 p-4">
-      <input type="file" accept=".pdf" onChange={handleFileUpload} />
+
+<h4 className="text-2xl font-semibold" >
+          Extract text from PDFs using Next.js 13
+        </h4>
+
+        <Link
+        href={"https://arshadyaseen.com/nextjs-pdf-extract-ocr"}
+        className="underline mt-3 underline-offset-[3px] mb-24"
+        >
+          How built this?
+        </Link>
+
+      <input type="file" accept=".pdf" onChange={handleFileUpload} className="ml-28" />
 
       {
         loading && status && (

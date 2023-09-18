@@ -17,7 +17,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={cn("bg-muted", inter.className)}>{children}</body>
+      <body className={cn("bg-muted", inter.className)}>
+        {children}
+        </body>
     </html>
   )
 }
