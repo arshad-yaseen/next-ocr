@@ -84,7 +84,7 @@ export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center sm:p-24 p-4">
       <h4 className="text-2xl font-semibold">
-        Extract text from PDFs using Next.js 13
+        Extract text from PDFs using Next.js app dir
       </h4>
 
       <Link
